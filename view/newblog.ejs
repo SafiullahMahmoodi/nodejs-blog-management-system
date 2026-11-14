@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Blogs |New Blog</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Blogs Page</h1>
+      <div class="header-content">
+        <div class="header-text">
+          <p>This is the main content of the blogs page.</p>
+        </div>
+
+        <nav class="header-nav">
+          <ul>
+            <li><a href="/">Blogs</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/newblog">New Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr />
+    </header>
+    <div class="main-content" id="newblog">
+      <form action="submit_blog.php" method="post">
+        <h2>Create a New Blog</h2>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required />
+        <label for="snippet">Snippet:</label>
+        <textarea id="snippet" name="snippet" required></textarea>
+        <label for="body">Body:</label>
+        <textarea id="body" name="body" required></textarea>
+        <button type="submit">Submit Blog</button>
+      </form>
+    </div>
+  </body>
+</html>

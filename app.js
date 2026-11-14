@@ -3,11 +3,22 @@ const _ = require("lodash");
 const fs = require("fs");
 const app = express();
 
+app.use(express.static("public"));
+
 app.listen(3000);
+app.set("view engine", "ejs");
+app.set("views", "./view");
+
 
 app.get("/", (req, res) => {
-  res.sendFile("./view/index.html", { root: __dirname });
+  res.render("index");
 });
 app.get("/about", (req, res) => {
   res.status(404).send("404 - About Page");
+});
+app.get("/newblog", (req, res) => {
+  res.render("newblog");
+});
+app.get("/details", (req, res) => {
+  res.render("details");
 });
