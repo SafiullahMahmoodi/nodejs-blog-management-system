@@ -7,23 +7,7 @@
     <title>Blogs |New Blog</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Blogs Page</h1>
-      <div class="header-content">
-        <div class="header-text">
-          <p>This is the main content of the blogs page.</p>
-        </div>
-
-        <nav class="header-nav">
-          <ul>
-            <li><a href="/">Blogs</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/newblog">New Blog</a></li>
-          </ul>
-        </nav>
-      </div>
-      <hr />
-    </header>
+    <%- include('partials/header') %>
     <div class="main-content" id="newblog">
       <form action="submit_blog.php" method="post">
         <h2>Create a New Blog</h2>
@@ -36,5 +20,6 @@
         <button type="submit">Submit Blog</button>
       </form>
     </div>
+    <%- include('partials/footer') %>
   </body>
 </html>

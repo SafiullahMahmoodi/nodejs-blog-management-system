@@ -7,23 +7,7 @@
     <title>Blogs | Blog Details</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Blogs Page</h1>
-      <div class="header-content">
-        <div class="header-text">
-          <p>This is the main content of the blogs page.</p>
-        </div>
-
-        <nav class="header-nav">
-          <ul>
-            <li><a href="/">Blogs</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/newblog">New Blog</a></li>
-          </ul>
-        </nav>
-      </div>
-      <hr />
-    </header>
+    <%- include('partials/header') %>
     <div class="main-content" style="position: relative">
       <h2 class="blog-title">Blog Title</h2>
       <p class="blog-body">Full blog content goes here.</p>
@@ -35,5 +19,6 @@
         >Delete</a
       >
     </div>
+    <%- include('partials/footer') %>
   </body>
 </html>
